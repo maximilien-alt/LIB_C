@@ -1,4 +1,8 @@
 .vscode
+#lib/my files
+lib/my/gcovr/
+lib/my/unit_tests
+
 # Prerequisites
 *.d
 
