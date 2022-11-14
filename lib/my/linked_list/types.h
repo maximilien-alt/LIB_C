@@ -8,4 +8,6 @@ typedef struct linked_list_s
   struct linked_list_s *prev;
 } linked_list_t;
 
+typedef int (*filter_callback)(linked_list_t *node);
+
 #endif /* TYPES_H_ */
