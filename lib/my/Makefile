@@ -1,10 +1,20 @@
-SRC	=	linked_list/add/add_node.c	\
+SRC	=	linked_list/add_back/add_node_back.c	\
+			linked_list/add_front/add_node_front.c	\
 			linked_list/size/list_size.c	\
-			linked_list/remove/remove_node.c
+			linked_list/remove/remove_node.c	\
+			linked_list/free/free_list.c	\
+			linked_list/at_index/list_at_index.c	\
+			linked_list/find/find_node.c	\
+			linked_list/filter/list_filter.c
 
-TESTS	=	linked_list/add/test_add_node.c	\
+TESTS	=	linked_list/add_back/test_add_node_back.c	\
+			linked_list/add_front/test_add_node_front.c	\
 			linked_list/size/test_list_size.c	\
-			linked_list/remove/test_remove_node.c
+			linked_list/remove/test_remove_node.c	\
+			linked_list/free/test_free_list.c	\
+			linked_list/at_index/test_list_at_index.c	\
+			linked_list/find/test_find_node.c	\
+			linked_list/filter/test_list_filter.c
 
 NAME	=	libmy.a
 
