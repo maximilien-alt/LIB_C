@@ -3,6 +3,7 @@
 #include "remove_node.h"
 #include "../add_back/add_node_back.h"
 #include "../size/list_size.h"
+#include "../free/free_list.h"
 
 linked_list_t *setup_list(int size)
 {
@@ -11,15 +12,6 @@ linked_list_t *setup_list(int size)
   for (int index = 0; index < size; index += 1)
     add_node_back(&list, NULL);
   return list;
-}
-
-void free_list(linked_list_t *list)
-{
-  for (linked_list_t *copy = list; copy; copy = list)
-  {
-    list = list->next;
-    free(copy);
-  }
 }
 
 Test(remove_node, remove_node_to_empty_list)
