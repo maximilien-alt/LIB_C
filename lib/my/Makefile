@@ -5,7 +5,18 @@ SRC	=	linked_list/add_back/add_node_back.c	\
 			linked_list/free/free_list.c	\
 			linked_list/at_index/list_at_index.c	\
 			linked_list/find/find_node.c	\
-			linked_list/filter/list_filter.c
+			linked_list/filter/list_filter.c	\
+			std/memcpy/my_memcpy.c	\
+			std/memset/my_memset.c	\
+			std/realloc/my_realloc.c	\
+			std/strdup/my_strdup.c	\
+			std/strlen/my_strlen.c	\
+			std/strsep/my_strsep.c	\
+			std/strcat/my_strcat.c	\
+			std/strcmp/my_strcmp.c	\
+			std/strncmp/my_strncmp.c	\
+			std/split/my_str_to_word_array.c	\
+			std/atoi/my_atoi.c	\
 
 TESTS	=	linked_list/add_back/test_add_node_back.c	\
 			linked_list/add_front/test_add_node_front.c	\
@@ -14,7 +25,16 @@ TESTS	=	linked_list/add_back/test_add_node_back.c	\
 			linked_list/free/test_free_list.c	\
 			linked_list/at_index/test_list_at_index.c	\
 			linked_list/find/test_find_node.c	\
-			linked_list/filter/test_list_filter.c
+			linked_list/filter/test_list_filter.c	\
+			std/memset/test_my_memset.c	\
+			std/strdup/test_my_strdup.c	\
+			std/strlen/test_my_strlen.c	\
+			std/strsep/test_my_strsep.c	\
+			std/strcat/test_my_strcat.c	\
+			std/strcmp/test_my_strcmp.c	\
+			std/strncmp/test_my_strncmp.c	\
+			std/split/test_my_str_to_word_array.c	\
+			std/atoi/test_my_atoi.c	\
 
 NAME	=	libmy.a
 
