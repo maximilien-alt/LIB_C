@@ -1,6 +1,6 @@
-#include "add_node.h"
+#include "add_node_back.h"
 
-void add_node(linked_list_t **head, void *obj)
+void add_node_back(linked_list_t **head, void *obj)
 {
   linked_list_t *new_node = malloc(sizeof(linked_list_t));
   linked_list_t *current = *head;

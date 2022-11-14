@@ -1,7 +1,7 @@
 #include <criterion/criterion.h>
 
 #include "remove_node.h"
-#include "../add/add_node.h"
+#include "../add_back/add_node_back.h"
 #include "../size/list_size.h"
 
 linked_list_t *setup_list(int size)
@@ -9,7 +9,7 @@ linked_list_t *setup_list(int size)
   linked_list_t *list = NULL;
 
   for (int index = 0; index < size; index += 1)
-    add_node(&list, NULL);
+    add_node_back(&list, NULL);
   return list;
 }
 
