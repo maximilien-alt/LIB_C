@@ -4,6 +4,7 @@
 #include "atoi/my_atoi.h"
 #include "memcpy/my_memcpy.h"
 #include "memset/my_memset.h"
+#include "read/readfile.h"
 #include "realloc/my_realloc.h"
 #include "split/my_str_to_word_array.h"
 #include "strcat/my_strcat.h"

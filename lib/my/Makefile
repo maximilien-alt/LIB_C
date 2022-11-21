@@ -17,6 +17,7 @@ SRC	=	linked_list/add_back/add_node_back.c	\
 			std/strncmp/my_strncmp.c	\
 			std/split/my_str_to_word_array.c	\
 			std/atoi/my_atoi.c	\
+			std/read/readfile.c \
 
 TESTS	=	linked_list/add_back/test_add_node_back.c	\
 			linked_list/add_front/test_add_node_front.c	\
@@ -35,6 +36,7 @@ TESTS	=	linked_list/add_back/test_add_node_back.c	\
 			std/strncmp/test_my_strncmp.c	\
 			std/split/test_my_str_to_word_array.c	\
 			std/atoi/test_my_atoi.c	\
+			std/read/test_readfile.c \
 
 NAME	=	libmy.a
 
