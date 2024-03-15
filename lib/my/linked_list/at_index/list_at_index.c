@@ -10,4 +10,5 @@ linked_list_t *list_at_index(linked_list_t *head, size_t index)
       return copy;
     current += 1;
   }
+  return NULL;
 }
