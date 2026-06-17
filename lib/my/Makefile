@@ -46,6 +46,13 @@ TEST_OBJ	=	$(SRC:.c=.o) $(TESTS:.c=.o)
 
 DIR_GCOVR	=	gcovr/
 
+CRITERION_PREFIX := $(shell brew --prefix criterion)
+
+CFLAGS_TEST	=	-I$(CRITERION_PREFIX)/include
+
+$(TESTS:.c=.o): %.o: %.c
+	$(CC) -c $< -o $@ $(CFLAGS_TEST)
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
@@ -66,7 +73,10 @@ fclean: clean
 re: fclean all
 
 test_run: clean $(TEST_OBJ)
-	$(CC) -o unit_tests ${SRC} $(TESTS) --coverage -lcriterion
+	$(CC) -o unit_tests ${SRC} $(TESTS) --coverage \
+		-I$(CRITERION_PREFIX)/include \
+		-L$(CRITERION_PREFIX)/lib \
+		-lcriterion
 	./unit_tests
 
 gcovr: test_run
