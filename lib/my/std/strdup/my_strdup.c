@@ -1,7 +1,7 @@
 #include "../strlen/my_strlen.h"
 #include "my_strdup.h"
 
-char *my_strdup(char *src)
+char *my_strdup(const char *src)
 {
   size_t malloc_size = my_strlen(src);
   char *result = NULL;

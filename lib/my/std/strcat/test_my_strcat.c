@@ -6,14 +6,14 @@ Test(my_strcat, strcat_with_first_null)
 {
   char *str = my_strcat(NULL, "second");
 
-  cr_assert_eq(str, "second");
+  cr_assert_str_eq(str, "second");
 }
 
 Test(my_strcat, strcat_with_second_null)
 {
   char *str = my_strcat("first", NULL);
 
-  cr_assert_eq(str, "first");
+  cr_assert_str_eq(str, "first");
 }
 
 Test(my_strcat, basic_strcat)
