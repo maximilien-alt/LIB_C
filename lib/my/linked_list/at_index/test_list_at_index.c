@@ -28,5 +28,5 @@ Test(list_at_index, list_at_index_to_non_empty_list)
   cr_assert_eq(list_at_index(list, 2), temp);
   cr_assert_null(list_at_index(list, 3));
 
-  free_list(list);
+  free_list(list, NULL);
 }

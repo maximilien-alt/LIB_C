@@ -5,6 +5,6 @@
 
 #include "../types.h"
 
-void free_list(linked_list_t *head);
+void free_list(linked_list_t *head, free_callback);
 
 #endif /* FREE_LIST_H_ */

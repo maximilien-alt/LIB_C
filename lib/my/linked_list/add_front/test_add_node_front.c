@@ -24,5 +24,5 @@ Test(add_node_front, add_node_front_to_non_empty_list)
 
   cr_assert_null(list->prev);
 
-  free_list(list);
+  free_list(list, NULL);
 }

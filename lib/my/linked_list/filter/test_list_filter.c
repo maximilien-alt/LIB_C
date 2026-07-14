@@ -44,7 +44,7 @@ Test(list_filter, list_filter_in_non_empty_list)
   cr_assert_eq(get_list_size(filter_non_null), 2);
   cr_assert_eq(get_list_size(filter_null), 1);
 
-  free_list(list);
-  free_list(filter_null);
-  free_list(filter_non_null);
+  free_list(list, NULL);
+  free_list(filter_null, NULL);
+  free_list(filter_non_null, NULL);
 }

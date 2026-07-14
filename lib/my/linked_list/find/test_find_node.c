@@ -53,5 +53,5 @@ Test(find_node, find_data_in_non_empty_list)
   cr_assert_null(find_node(list, &filter));
   cr_assert_eq(list, save);
 
-  free_list(list);
+  free_list(list, NULL);
 }

@@ -31,7 +31,7 @@ Test(remove_node, remove_empty_node_to_list)
   
   cr_assert_eq(get_list_size(list), 3);
 
-  free_list(list);
+  free_list(list, NULL);
 }
 
 Test(remove_node, remove_unknown_node_to_list)
@@ -43,7 +43,7 @@ Test(remove_node, remove_unknown_node_to_list)
   
   cr_assert_eq(get_list_size(list), 3);
 
-  free_list(list);
+  free_list(list, NULL);
   free(unknown);
 }
 
@@ -94,5 +94,5 @@ Test(remove_node, remove_mid_node)
   cr_assert_eq(list, list->next->prev);
 
   
-  free_list(list);
+  free_list(list, NULL);
 }

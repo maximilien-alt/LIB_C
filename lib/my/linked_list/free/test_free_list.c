@@ -7,7 +7,7 @@ Test(free_list, free_list_to_empty_list)
 {
   linked_list_t *empty = NULL;
 
-  free_list(empty);
+  free_list(empty, NULL);
   cr_assert_null(empty);
 }
 
@@ -22,7 +22,7 @@ Test(free_list, list_size_to_non_empty_list)
 
   cr_assert_not_null(list);
 
-  free_list(list);
+  free_list(list, NULL);
 
   cr_assert_neq(list, save);
 }

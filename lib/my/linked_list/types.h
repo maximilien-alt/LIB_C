@@ -10,5 +10,6 @@ typedef struct linked_list_s
 
 typedef int (*filter_callback)(linked_list_t *node);
 typedef void (*for_each_callback)(linked_list_t *node);
+typedef void (*free_callback)(linked_list_t *node);
 
 #endif /* TYPES_H_ */
