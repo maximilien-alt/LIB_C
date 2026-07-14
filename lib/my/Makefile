@@ -6,6 +6,7 @@ SRC	=	linked_list/add_back/add_node_back.c	\
 			linked_list/at_index/list_at_index.c	\
 			linked_list/find/find_node.c	\
 			linked_list/filter/list_filter.c	\
+			linked_list/for_each/for_each.c	\
 			std/memcpy/my_memcpy.c	\
 			std/memset/my_memset.c	\
 			std/realloc/my_realloc.c	\
@@ -34,6 +35,7 @@ TESTS	=	linked_list/add_back/test_add_node_back.c	\
 			linked_list/at_index/test_list_at_index.c	\
 			linked_list/find/test_find_node.c	\
 			linked_list/filter/test_list_filter.c	\
+			linked_list/for_each/test_for_each.c	\
 			std/memset/test_my_memset.c	\
 			std/strdup/test_my_strdup.c	\
 			std/strlen/test_my_strlen.c	\

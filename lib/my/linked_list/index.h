@@ -13,5 +13,6 @@
 #include "free/free_list.h"
 #include "remove/remove_node.h"
 #include "size/list_size.h"
+#include "for_each/for_each.h"
 
 #endif /* LINKED_LIST_H_ */
