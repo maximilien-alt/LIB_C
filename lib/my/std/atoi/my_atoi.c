@@ -10,7 +10,7 @@ int my_atoi(char *nptr)
     return 0;
   for(; nptr[index] == '+' || nptr[index] =='-' ; index += 1)
     number_of_subs += (nptr[index] == '-') ? 1 : 0;
-  for(; nptr[index]; index += 1)
+  for(; nptr[index] && nptr[index] >= '0' && nptr[index] <= '9'; index += 1)
   {
     if (INT_MAX / 10 < result)
       return 0;
