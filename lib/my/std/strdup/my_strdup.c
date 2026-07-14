@@ -6,7 +6,7 @@ char *my_strdup(const char *src)
   size_t malloc_size = my_strlen(src);
   char *result = NULL;
 
-  if (!malloc_size)
+  if (!src)
     return NULL;
   result = malloc(malloc_size + 1);
   for (size_t index = 0; src[index]; index += 1)
