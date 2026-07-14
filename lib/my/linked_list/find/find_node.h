@@ -5,6 +5,6 @@
 
 #include "../types.h"
 
-linked_list_t * find_node(linked_list_t *head, filter_callback callback);
+linked_list_t * find_node(linked_list_t *head, find_callback callback, void *args);
 
 #endif /* LIST_FIND_H_ */

@@ -9,7 +9,7 @@ typedef struct test_s
   int value;
 } test_t;
 
-int filter(linked_list_t *node)
+int filter(linked_list_t *node, void *args)
 {
   test_t *test = (test_t *)(node->data);
 
@@ -18,7 +18,7 @@ int filter(linked_list_t *node)
   return test->value == 42;
 }
 
-int is_null(linked_list_t *node)
+int is_null(linked_list_t *node, void *args)
 {
   return (node->data == NULL);
 }
@@ -27,7 +27,7 @@ Test(find_node, find_data_in_empty_list)
 {
   linked_list_t *empty = NULL;
 
-  cr_assert_null(find_node(empty, NULL));
+  cr_assert_null(find_node(empty, NULL, NULL));
 }
 
 Test(find_node, find_data_in_non_empty_list)
@@ -43,14 +43,14 @@ Test(find_node, find_data_in_non_empty_list)
   add_node_back(&list, &t_2);
 
   save = list;
-  temp = find_node(list, NULL);
+  temp = find_node(list, NULL, NULL);
   cr_assert_null(temp);
-  temp = find_node(list, &is_null);
+  temp = find_node(list, &is_null, NULL);
   cr_assert_eq(temp, list);
   temp = temp->next->next;
-  cr_assert_eq(find_node(list, &filter), temp);
+  cr_assert_eq(find_node(list, &filter, NULL), temp);
   t_2.value = 43;
-  cr_assert_null(find_node(list, &filter));
+  cr_assert_null(find_node(list, &filter, NULL));
   cr_assert_eq(list, save);
 
   free_list(list, NULL);
