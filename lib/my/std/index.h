@@ -3,6 +3,7 @@
 
 #include "atoi/my_atoi.h"
 #include "memcpy/my_memcpy.h"
+#include "strncpy/my_strncpy.h"
 #include "memset/my_memset.h"
 #include "read/readfile.h"
 #include "realloc/my_realloc.h"
