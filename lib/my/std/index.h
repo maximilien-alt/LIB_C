@@ -14,5 +14,6 @@
 #include "strlen/my_strlen.h"
 #include "strncmp/my_strncmp.h"
 #include "strsep/my_strsep.h"
+#include "array/free_array.h"
 
 #endif /* STD_H_ */

@@ -19,6 +19,7 @@ SRC	=	linked_list/add_back/add_node_back.c	\
 			std/atoi/my_atoi.c	\
 			std/read/readfile.c \
 			std/strncpy/my_strncpy.c	\
+			std/array/free_array.c	\
 			errors/errors.c	\
 			eval/eval.c	\
 			eval/validity.c	\
@@ -44,6 +45,7 @@ TESTS	=	linked_list/add_back/test_add_node_back.c	\
 			std/atoi/test_my_atoi.c	\
 			std/read/test_readfile.c \
 			std/strncpy/test_my_strncpy.c	\
+			std/array/test_free_array.c	\
 			eval/test_eval.c	\
 
 NAME	=	libmy.a
